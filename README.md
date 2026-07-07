@@ -4,15 +4,19 @@ Consistent daily practice log — solving DSA problems every day, tracked public
 
 **Goal:** Build strong pattern recognition for FAANG/fintech-style interviews (targeting Java-based solutions, following NeetCode 150 + spaced repetition).
 
----
 
-## Approach
+
+---
+# Approach
+
 
 Each solution includes:
 - The problem statement and source link
 - The pattern it belongs to (e.g. Sliding Window, Two Pointers, DFS, DP)
 - A short explanation of the approach, written before referring to any external solution
 - Time and space complexity analysis
+
+
 
 The focus is on pattern recognition and retention, not just problem count — solutions are periodically revisited rather than solved once and left behind.
 
@@ -56,9 +60,20 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 
 ## 🎯 Current Focus
 
-Depth learning of DSA problems and their underlying patterns for every solution solved.
+
+- Depth learning of DSA Problem and it's pattern for evry solution, & here to vrack MANGO!
+
 
 ---
+## Tech
+
+Solutions primarily written in **Java**.
+
+---
+
+## Notes
+
+This repository is actively maintained. See the commit history / contribution graph for practice consistency.
 
 <!-- STATS_START -->
 ## Stats
@@ -86,3 +101,10 @@ This repository is actively maintained. See the commit history / contribution gr
 - Resume: —
 - LinkedIn: —
 - LeetCode Profile: —
+
+
+
+---
+
+*Started: [06/07/2026]*
+
