@@ -65,11 +65,6 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 
 
 ---
-## Tech
-
-Solutions primarily written in **Java**.
-
----
 
 ## Notes
 
