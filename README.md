@@ -4,17 +4,17 @@ Consistent daily practice log — solving DSA problems every day, tracked public
 
 **Goal:** Build strong pattern recognition for FAANG/fintech-style interviews (targeting Java-based solutions, following NeetCode 150 + spaced repetition).
 
-**Rule:** One problem solved = one commit, same day. No backdating, no empty commits.
-
 ---
 
-## 📊 Progress Tracker
+## Approach
 
-| Day | Date | Problem | Topic | Difficulty | Pattern | Link | Notes |
-|-----|------|---------|-------|------------|---------|------|-------|
-| 1 | | | | | | | |
+Each solution includes:
+- The problem statement and source link
+- The pattern it belongs to (e.g. Sliding Window, Two Pointers, DFS, DP)
+- A short explanation of the approach, written before referring to any external solution
+- Time and space complexity analysis
 
-> Add a new row every day you solve a problem. Keep the newest entry at the top or bottom — just stay consistent.
+The focus is on pattern recognition and retention, not just problem count — solutions are periodically revisited rather than solved once and left behind.
 
 ---
 
@@ -48,31 +48,41 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 
 ## 🔁 Retention Strategy
 
-Since retention (not just solving) is the actual goal:
-
 1. **Don't just paste code** — write a 3-4 line comment block above the solution explaining the approach *in your own words* before checking any reference.
 2. **Tag the pattern** — e.g., "Sliding Window", "Two Pointers", "Binary Search on Answer", "DP - 0/1 Knapsack variant". This is what actually transfers between problems.
 3. **Weekly revisit** — every 7 days, re-solve 2-3 problems from the previous week *without* looking at your old solution first.
-4. **Track difficulty honestly** — if you needed hints/solution, mark it in the Notes column (e.g., "needed hint on sliding window bound"). This is for you, not for show.
 
 ---
 
 ## 🎯 Current Focus
 
-- [ ] NeetCode 150 — Arrays & Hashing
-- [ ] NeetCode 150 — Two Pointers
-- [ ] NeetCode 150 — Sliding Window
-- [ ] NeetCode 150 — Stack
-- [ ] NeetCode 150 — Binary Search
+Depth learning of DSA problems and their underlying patterns for every solution solved.
 
 ---
+
+<!-- STATS_START -->
+## Stats
+
+| Topic | Solved |
+|-------|--------|
+
+**Total problems solved:** 0
+<!-- STATS_END -->
+
+---
+
+## Tech
+
+Solutions primarily written in **Java**.
+
+---
+
+## Notes
+
+This repository is actively maintained. See the commit history / contribution graph for practice consistency.
 
 ## 🔗 Links
 
 - Resume: —
 - LinkedIn: —
 - LeetCode Profile: —
-
----
-
-*Started: [add start date here]*
