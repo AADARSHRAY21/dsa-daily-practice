@@ -6,15 +6,17 @@ Consistent daily practice log — solving DSA problems every day, tracked public
 
 **Rule:** One problem solved = one commit, same day. No backdating, no empty commits.
 
+
 ---
+# Approach
 
-## 📊 Progress Tracker
+Each solution includes:
+- The problem statement and source link
+- The pattern it belongs to (e.g. Sliding Window, Two Pointers, DFS, DP)
+- A short explanation of the approach, written before referring to any external solution
+- Time and space complexity analysis
 
-| Day | Date | Problem | Topic | Difficulty | Pattern | Link | Notes |
-|-----|------|---------|-------|------------|---------|------|-------|
-| 1 | | | | | | | |
-
-> Add a new row every day you solve a problem. Keep the newest entry at the top or bottom — just stay consistent.
+The focus is on pattern recognition and retention, not just problem count — solutions are periodically revisited rather than solved once and left behind.
 
 ---
 
@@ -59,13 +61,18 @@ Since retention (not just solving) is the actual goal:
 
 ## 🎯 Current Focus
 
-- [ ] NeetCode 150 — Arrays & Hashing
-- [ ] NeetCode 150 — Two Pointers
-- [ ] NeetCode 150 — Sliding Window
-- [ ] NeetCode 150 — Stack
-- [ ] NeetCode 150 — Binary Search
+- Depth learning of DSA Problem and it's pattern for evry solution, & here to vrack MANGO!
 
 ---
+## Tech
+
+Solutions primarily written in **Java**.
+
+---
+
+## Notes
+
+This repository is actively maintained. See the commit history / contribution graph for practice consistency.
 
 ## 🔗 Links
 
@@ -75,4 +82,4 @@ Since retention (not just solving) is the actual goal:
 
 ---
 
-*Started: [add start date here]*
+*Started: [06/07/2026]*
