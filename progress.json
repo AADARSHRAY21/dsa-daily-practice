@@ -2,7 +2,9 @@
   {
     "date": "2026-07-07",
     "problem": "Valid Parentheses",
-    "topic": "arrays",
+    "topic": [ 
+      "arrays"
+  ],
     "difficulty": "Easy",
     "pattern": "String, Stack(LIFO)",
     "link": "https://leetcode.com/problems/longest-common-prefix/description/",
@@ -11,10 +13,45 @@
   {
     "date": "2026-07-09",
     "problem": "Longest Common prefix",
-    "topic": "arrays",
-    "difficulty": "//    if(strs == null || strs.length ==0) return \"\";",
-    "pattern": "//    for(int i =0; i<strs.length ; i++) {  //Compare with remaining String",
+    "topic": [ 
+      "arrays"
+  ],
+    "difficulty": "Easy",
+    "pattern": "Horizontal Scanning / Character-by-Character Comparison",
     "link": "https://leetcode.com/problems/longest-common-prefix/",
     "notes": "1.Horizontal Scanning is intuitive and easy to explain: assume the first string is the prefix and keep shrinking it until it matches all strings.2.Vertical Scanning is often preferred in interviews because it directly compares characters and can stop immediately at the first mismatch."
+  },
+   {
+    "date": "2026-07-06",
+    "problem": "Two Sum",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "HashMap - complement lookup",
+    "link": "https://leetcode.com/problems/two-sum/",
+    "notes" : "Approach (in my own words) 1.Walk through array once. 2.For each number, check if (target - number) already exists in map. 3.If yes, return the two indices. If no, store number -> index in map"
+  },
+   {
+    "date": "2026-07-08",
+    "problem": "Build Array from Permutation",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Array Index Mapping (Direct Mapping)",
+    "link": "https://leetcode.com/problems/build-array-from-permutation/",
+    "notes" : "1.For each index i, the answer is just nums[nums[i]]. 2.No extra logic, no edge cases — just one pass, direct lookup. 3.rick to remember: (index of index) → ans[i] = nums[nums[i]]"
+  },
+  {
+    "date": "2026-07-08",
+    "problem": "Special Array I",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Array Traversal (Linear Scan) + Adjacent Pair Checking",
+    "link": "https://leetcode.com/problems/special-array-i/",
+    "notes" : "1.An array is special if every pair of adjacent elements has different parity."
   }
 ]
