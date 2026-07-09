@@ -3,7 +3,7 @@
     "date": "2026-07-07",
     "problem": "Valid Parentheses",
     "topic": [ 
-      "arrays"
+      "strings", "stacks-queues"
   ],
     "difficulty": "Easy",
     "pattern": "String, Stack(LIFO)",
@@ -14,7 +14,7 @@
     "date": "2026-07-09",
     "problem": "Longest Common prefix",
     "topic": [ 
-      "arrays"
+      "arrays","strings"
   ],
     "difficulty": "Easy",
     "pattern": "Horizontal Scanning / Character-by-Character Comparison",
