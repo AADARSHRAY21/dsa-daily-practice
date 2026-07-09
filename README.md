@@ -75,9 +75,11 @@ This repository is actively maintained. See the commit history / contribution gr
 
 | Topic | Solved |
 |-------|--------|
-| arrays | 2 |
+| arrays | 5 |
+| strings | 2 |
+| stacks-queues | 1 |
 
-**Total problems solved:** 2
+**Total problems solved:** 5
 <!-- STATS_END -->
 
 ---
