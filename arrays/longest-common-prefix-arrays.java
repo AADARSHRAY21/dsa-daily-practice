@@ -3,6 +3,7 @@
  * Link: https://leetcode.com/problems/longest-common-prefix/
  * Difficulty: Easy
  * Pattern: Horizontal Scanning / Character-by-Character Comparison
+ * topics: Arrays , Strings
  *
  * Approach (in my own words):
  * - Compare characters at the same index across all strings, using the

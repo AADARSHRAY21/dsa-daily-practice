@@ -3,6 +3,7 @@
  * Link: https://leetcode.com/problems/two-sum/
  * Difficulty: Easy
  * Pattern: HashMap - complement lookup
+ * Topics: Array
  *
  * Approach (in my own words):
  * - Walk through array once.
@@ -15,6 +16,7 @@
  * Needed hint? No
  *
  * Revisit on: (7 days from solve date)
+ 
  */
 
 import java.util.HashMap;

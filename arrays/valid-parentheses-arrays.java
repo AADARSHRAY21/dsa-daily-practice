@@ -1,14 +1,19 @@
 /*
  * Problem: Valid Parentheses (LeetCode #20)
- * Link: https://leetcode.com/problems/valid-parentheses/description/
+ * Link: https://leetcode.com/problems/valid-parentheses/
  * Difficulty: Easy
- * Pattern: String, Stack(LIFO)
+ * Pattern: String, Stack (LIFO)
+ * Topics: arrays, strings, stacks-queues
  *
  * Approach (in my own words):
- * -
+ * 1. Push every opening bracket onto the stack.
+ * 2. When a closing bracket appears, check if the stack is empty or if
+ *    the top doesn't match its corresponding opening bracket.
+ * 3. If either condition is true, return false.
+ * 4. After processing all characters, return true only if the stack is empty.
  *
- * Time Complexity: O(?)
- * Space Complexity: O(?)
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  *
  * Needed hint? No
  *
