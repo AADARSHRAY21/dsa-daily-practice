@@ -38,8 +38,8 @@ const TOPICS = [
 
 const PROGRESS_FILE = path.join(__dirname, "progress.json");
 const README_FILE = path.join(__dirname, "README.md");
-const START_MARKER = "<!-- PROGRESS_TABLE_START -->";
-const END_MARKER = "<!-- PROGRESS_TABLE_END -->";
+const START_MARKER = "<!-- STATS_START -->";
+const END_MARKER = "<!-- STATS_END -->";
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -66,32 +66,43 @@ function saveProgress(entries) {
   fs.writeFileSync(PROGRESS_FILE, JSON.stringify(entries, null, 2));
 }
 
-function regenerateReadmeTable(entries) {
+function getEntryTopics(e) {
+  // Supports both new multi-topic entries (topics: [...]) and old single-topic entries (topic: "...")
+  if (Array.isArray(e.topics)) return e.topics;
+  if (e.topic) return [e.topic];
+  return [];
+}
+
+function regenerateReadmeStats(entries) {
   let readme = fs.readFileSync(README_FILE, "utf8");
   const startIdx = readme.indexOf(START_MARKER);
   const endIdx = readme.indexOf(END_MARKER);
 
   if (startIdx === -1 || endIdx === -1) {
     console.log(
-      "⚠️  Could not find table markers in README.md. Skipping auto-update — add markers manually (see SETUP.md)."
+      "⚠️  Could not find stats markers in README.md. Skipping auto-update — add markers manually (see SETUP.md)."
     );
     return;
   }
 
-  const header =
-    "| Day | Date | Problem | Topic | Difficulty | Pattern | Link | Notes |\n" +
-    "|-----|------|---------|-------|------------|---------|------|-------|\n";
+  const counts = {};
+  for (const t of TOPICS) counts[t] = 0;
+  for (const e of entries) {
+    for (const t of getEntryTopics(e)) {
+      counts[t] = (counts[t] || 0) + 1;
+    }
+  }
 
-  const rows = entries
-    .map(
-      (e, i) =>
-        `| ${i + 1} | ${e.date} | ${e.problem} | ${e.topic} | ${e.difficulty} | ${e.pattern} | [link](${e.link}) | ${e.notes || "-"} |`
-    )
+  const header = "## Stats\n\n| Topic | Solved |\n|-------|--------|\n";
+  const rows = TOPICS.filter((t) => counts[t] > 0)
+    .map((t) => `| ${t} | ${counts[t]} |`)
     .join("\n");
 
-  const tableBlock = `${START_MARKER}\n${header}${rows}\n${END_MARKER}`;
+  // Total counts each solved PROBLEM once, even if it was filed under multiple topics
+  const total = entries.length;
+  const statsBlock = `${START_MARKER}\n${header}${rows}\n\n**Total problems solved:** ${total}\n${END_MARKER}`;
 
-  readme = readme.slice(0, startIdx) + tableBlock + readme.slice(endIdx + END_MARKER.length);
+  readme = readme.slice(0, startIdx) + statsBlock + readme.slice(endIdx + END_MARKER.length);
   fs.writeFileSync(README_FILE, readme);
 }
 
@@ -103,14 +114,27 @@ function openInNotepad(filePath) {
 async function main() {
   console.log("\n📌 New solved problem — let's log it.\n");
 
-  console.log("Pick a topic folder:");
+  console.log("Pick topic folder(s) — comma-separated if the problem spans multiple (e.g. 1,3):");
   TOPICS.forEach((t, i) => console.log(`  ${i + 1}. ${t}`));
-  let topicIdx = -1;
-  while (topicIdx < 0 || topicIdx >= TOPICS.length) {
-    const answer = await ask(`Enter number (1-${TOPICS.length}): `);
-    topicIdx = parseInt(answer, 10) - 1;
+  let topics = [];
+  while (topics.length === 0) {
+    const answer = await ask(`Enter number(s) (1-${TOPICS.length}): `);
+    const indices = answer
+      .split(",")
+      .map((s) => parseInt(s.trim(), 10) - 1)
+      .filter((i) => !isNaN(i) && i >= 0 && i < TOPICS.length);
+    // dedupe while preserving order
+    const seen = new Set();
+    topics = indices.filter((i) => {
+      if (seen.has(i)) return false;
+      seen.add(i);
+      return true;
+    }).map((i) => TOPICS[i]);
+    if (topics.length === 0) {
+      console.log(`Please enter valid number(s) between 1 and ${TOPICS.length}, comma-separated.`);
+    }
   }
-  const topic = TOPICS[topicIdx];
+  console.log(`Selected: ${topics.join(", ")}`);
 
   const problemName = await ask("Problem name (e.g. Valid Anagram): ");
   const leetcodeNum = await ask("LeetCode number (optional, press Enter to skip): ");
@@ -118,13 +142,13 @@ async function main() {
   const difficulty = await ask("Difficulty (Easy/Medium/Hard): ");
   const pattern = await ask("Pattern (e.g. Sliding Window, DFS, DP - Knapsack): ");
   const neededHint = await ask("Needed a hint? (Yes/No): ");
-  const notes = await ask("Any short note for the table (optional): ");
 
   const fileName = `${toKebabCase(problemName)}.java`;
-  const filePath = path.join(__dirname, topic, fileName);
+  const filePaths = topics.map((t) => path.join(__dirname, t, fileName));
 
-  if (fs.existsSync(filePath)) {
-    console.log(`\n⚠️  ${filePath} already exists. Aborting so nothing gets overwritten.`);
+  const alreadyExists = filePaths.find((p) => fs.existsSync(p));
+  if (alreadyExists) {
+    console.log(`\n⚠️  ${alreadyExists} already exists. Aborting so nothing gets overwritten.`);
     rl.close();
     return;
   }
@@ -136,6 +160,7 @@ async function main() {
  * Link: ${link}
  * Difficulty: ${difficulty}
  * Pattern: ${pattern}
+ * Topics: ${topics.join(", ")}
  *
  * Approach (in my own words):
  * -
@@ -152,27 +177,35 @@ async function main() {
 
 `;
 
-  fs.writeFileSync(filePath, template);
-  console.log(`\n✅ Created ${topic}/${fileName}`);
+  // Write the template to the first selected topic folder — this is the one you'll edit in Notepad
+  const primaryFilePath = filePaths[0];
+  fs.writeFileSync(primaryFilePath, template);
+  console.log(`\n✅ Created ${topics[0]}/${fileName}`);
   console.log("📝 Opening it in Notepad — paste your code, save, and close it (or leave it open).");
 
-  openInNotepad(filePath);
+  openInNotepad(primaryFilePath);
 
   await ask("\nPress Enter here once you've saved your code in Notepad... ");
+
+  // Copy the finished file into every other selected topic folder
+  const finalContent = fs.readFileSync(primaryFilePath, "utf8");
+  for (let i = 1; i < filePaths.length; i++) {
+    fs.writeFileSync(filePaths[i], finalContent);
+    console.log(`✅ Copied into ${topics[i]}/${fileName}`);
+  }
 
   const entries = loadProgress();
   entries.push({
     date: today,
     problem: problemName,
-    topic,
+    topics,
     difficulty,
     pattern,
     link,
-    notes,
   });
   saveProgress(entries);
-  regenerateReadmeTable(entries);
-  console.log("✅ README progress table updated.");
+  regenerateReadmeStats(entries);
+  console.log("✅ README stats updated.");
 
   try {
     execSync("git add .", { cwd: __dirname, stdio: "inherit" });
