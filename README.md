@@ -75,8 +75,9 @@ This repository is actively maintained. See the commit history / contribution gr
 
 | Topic | Solved |
 |-------|--------|
+| arrays | 2 |
 
-**Total problems solved:** 0
+**Total problems solved:** 2
 <!-- STATS_END -->
 
 ---
