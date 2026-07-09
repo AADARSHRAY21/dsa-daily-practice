@@ -1,6 +1,6 @@
 /*
  * Problem: Longest Common prefix (LeetCode #14)
- * Link: class Solution {
+ * Link: https://leetcode.com/problems/longest-common-prefix/description/
  * Difficulty: //    if(strs == null || strs.length ==0) return "";
  * Pattern: //    for(int i =0; i<strs.length ; i++) {  //Compare with remaining String
  *

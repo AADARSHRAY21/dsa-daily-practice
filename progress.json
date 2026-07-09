@@ -5,7 +5,7 @@
     "topic": "arrays",
     "difficulty": "Easy",
     "pattern": "String, Stack(LIFO)",
-    "link": "https://leetcode.com/problems/valid-parentheses/description/",
+    "link": "https://leetcode.com/problems/longest-common-prefix/description/",
     "notes": "1.Push every opening bracket (,{ [ onto the stack. 2.When a closing Bracket Appears,Check if the Stack is empty or if the top doesn't match. 3.if either condition is true,return false. 4.After processing all Charchters,return true only if the stack is empty"
   },
   {
