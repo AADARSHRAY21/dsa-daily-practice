@@ -14,7 +14,7 @@
     "topic": "arrays",
     "difficulty": "//    if(strs == null || strs.length ==0) return \"\";",
     "pattern": "//    for(int i =0; i<strs.length ; i++) {  //Compare with remaining String",
-    "link": "class Solution {",
-    "notes": "//    }"
+    "link": "https://leetcode.com/problems/longest-common-prefix/",
+    "notes": "1.Horizontal Scanning is intuitive and easy to explain: assume the first string is the prefix and keep shrinking it until it matches all strings.2.Vertical Scanning is often preferred in interviews because it directly compares characters and can stop immediately at the first mismatch."
   }
 ]
