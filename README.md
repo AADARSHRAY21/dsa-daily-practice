@@ -63,12 +63,7 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 
 - Depth learning of DSA Problem and it's pattern for evry solution, & here to vrack MANGO!
 
-
 ---
-
-## Notes
-
-This repository is actively maintained. See the commit history / contribution graph for practice consistency.
 
 <!-- STATS_START -->
 ## Stats
@@ -82,25 +77,24 @@ This repository is actively maintained. See the commit history / contribution gr
 **Total problems solved:** 5
 <!-- STATS_END -->
 
+
+## Tech👨‍💻
+
+Solutions primarily written in **Java** 💯.
+
 ---
 
-## Tech
+## Notes📝
 
-Solutions primarily written in **Java**.
+This repository is actively maintained. See the commit history / contribution graph for practice consistency✏️.
 
 ---
-
-## Notes
-
-This repository is actively maintained. See the commit history / contribution graph for practice consistency.
 
 ## 🔗 Links
 
-- Resume: —
-- LinkedIn: —
-- LeetCode Profile: —
-
-
+- Resume: —https://bit.ly/21xenon
+- LinkedIn: —www.linkedin.com/in/aadarshray
+- LeetCode Profile: —https://leetcode.com/u/AadarshRay/
 
 ---
 
