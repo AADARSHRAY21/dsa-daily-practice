@@ -141,6 +141,9 @@ async function main() {
   const link = await ask("Problem link (paste URL): ");
   const difficulty = await ask("Difficulty (Easy/Medium/Hard): ");
   const pattern = await ask("Pattern (e.g. Sliding Window, DFS, DP - Knapsack): ");
+  const Timecomplexity = await ask("Time Complexity");
+  const Spacecomplexity = await ask("Space Complextiy");
+  const notes = await ask("notes:");
   const neededHint = await ask("Needed a hint? (Yes/No): ");
 
   const fileName = `${toKebabCase(problemName)}.java`;
@@ -165,11 +168,11 @@ async function main() {
  * Approach (in my own words):
  * -
  *
- * Time Complexity: O(?)
- * Space Complexity: O(?)
+ * Time Complexity: ${timeComplexity}
+ * Space Complexity: ${spaceComplexity}
  *
  * Needed hint? ${neededHint}
- * notes(with T & S comaplexity):
+ * Notes : ${notes}
  * Revisit on: (7 days from ${today})
  */
 
@@ -202,6 +205,9 @@ async function main() {
     difficulty,
     pattern,
     link,
+    "Time Complexity":TimeComplexity,
+    "Space Comp[lexity":Spacecomplexity,
+    notes,
   });
   saveProgress(entries);
   regenerateReadmeStats(entries);

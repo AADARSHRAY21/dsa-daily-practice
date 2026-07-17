@@ -65,16 +65,6 @@
     ],
     "difficulty": "easy",
     "pattern": "Digit Manipulation",
-    "link": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/"
-  },
-  {
-    "date": "2026-07-17",
-    "problem": "Find Numbers with Even numbers Of Diguts",
-    "topics": [
-      "arrays"
-    ],
-    "difficulty": "easy",
-    "pattern": "Array Math mid level",
-    "link": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits"
+    "link": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/","notes": "Math.abs() avoids issues with negative numbers.String.valueOf(num).length() is the fastest way to write this in an interview if mathematical digit counting isn't required. Check digit % 2 == 0 → even number of digits.One pass through the array; no extra data structures."
   }
 ]
