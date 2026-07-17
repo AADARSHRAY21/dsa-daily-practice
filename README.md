@@ -70,11 +70,11 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 
 | Topic | Solved |
 |-------|--------|
-| arrays | 7 |
+| arrays | 6 |
 | strings | 2 |
 | stacks-queues | 1 |
 
-**Total problems solved:** 7
+**Total problems solved:** 6
 <!-- STATS_END -->
 
 
