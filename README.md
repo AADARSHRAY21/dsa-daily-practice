@@ -32,6 +32,7 @@ dsa-daily-practice/
 ├── stacks-queues/
 ├── trees/
 ├── graphs/
+├── Sorting/
 ├── dp/
 ├── greedy/
 ├── binary-search/

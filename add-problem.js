@@ -28,6 +28,7 @@ const TOPICS = [
   "stacks-queues",
   "trees",
   "graphs",
+  "Sorting",
   "dp",
   "greedy",
   "binary-search",
