@@ -66,5 +66,15 @@
     "difficulty": "easy",
     "pattern": "Digit Manipulation",
     "link": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/"
+  },
+  {
+    "date": "2026-07-17",
+    "problem": "Find Numbers with Even numbers Of Diguts",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "easy",
+    "pattern": "Array Math mid level",
+    "link": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits"
   }
 ]
