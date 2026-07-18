@@ -169,8 +169,8 @@ async function main() {
  * Approach (in my own words):
  * -
  *
- * Time Complexity: ${timeComplexity}
- * Space Complexity: ${spaceComplexity}
+ * Time Complexity: ${Timecomplexity}
+ * Space Complexity: ${Spacecomplexity}
  *
  * Needed hint? ${neededHint}
  * Notes : ${notes}
