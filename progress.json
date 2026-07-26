@@ -80,5 +80,18 @@
     "Time Complexity:": "O(n) average — each element is processed once, and HashSet.add() is O(1) average.",
     "Space Complexity:": "O(n) — in the worst case, all elements are unique and stored in the set.",
     "notes": "1.HashSet stores unique elements only. 2.add() directly helps detect duplicates because it returns false if the element already exists. 3.Early exit: As soon as a duplicate is found, return true. 4No need to use contains() and then add() separately."
+  },
+  {
+    "date": "2026-07-26",
+    "problem": "Palindrome number",
+    "topics": [
+      "Math"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Math",
+    "link": "https://leetcode.com/problems/palindrome-number/",
+    "Time Complexity:": "O(log₁₀ x),Each loop removes one digit from x, and a number with d digits takes about d / 2 iterations.",
+    "Space Complexity:": "O(1),Only a few integer variables are used (x and reversed), regardless of the input size.",
+    "notes": "Negative or ending with 0 → not palindrome (0 is valid).Reverse only half the digits → avoids overflow.Stop when reversed >= x.Even digits: x == reversed.Odd digits: x == reversed / 10.Time: O(log₁₀ n) | Space: O(1)."
   }
 ]
