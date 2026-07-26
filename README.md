@@ -28,6 +28,7 @@ The focus is on pattern recognition and retention, not just problem count — so
 dsa-daily-practice/
 ├── arrays/
 ├── strings/
+├── Math/
 ├── linked-lists/
 ├── stacks-queues/
 ├── trees/
