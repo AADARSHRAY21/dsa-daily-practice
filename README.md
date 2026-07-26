@@ -74,6 +74,7 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 |-------|--------|
 | arrays | 7 |
 | strings | 2 |
+| Math | 1 |
 | stacks-queues | 1 |
 
 **Total problems solved:** 8
