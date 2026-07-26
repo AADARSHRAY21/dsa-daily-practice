@@ -19,6 +19,7 @@ const { execSync } = require("child_process");
 const TOPICS = [
   "arrays",
   "strings",
+  "Math",
   "linked-lists",
   "stacks-queues",
   "trees",
