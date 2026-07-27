@@ -93,5 +93,18 @@
     "Time Complexity:": "O(log₁₀ x),Each loop removes one digit from x, and a number with d digits takes about d / 2 iterations.",
     "Space Complexity:": "O(1),Only a few integer variables are used (x and reversed), regardless of the input size.",
     "notes": "Negative or ending with 0 → not palindrome (0 is valid).Reverse only half the digits → avoids overflow.Stop when reversed >= x.Even digits: x == reversed.Odd digits: x == reversed / 10.Time: O(log₁₀ n) | Space: O(1)."
+  },
+  {
+    "date": "2026-07-27",
+    "problem": "Reverse String",
+    "topics": [
+      "strings"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Two Pointers, String",
+    "link": "https://leetcode.com/problems/reverse-string/",
+    "Time Complexity:": "O(n)",
+    "Space Complexity:": "O(1)",
+    "notes": "In optimal First use two Pointers Swap Left and right and left >= right Stop."
   }
 ]
