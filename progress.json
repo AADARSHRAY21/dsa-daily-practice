@@ -106,5 +106,20 @@
     "Time Complexity:": "O(n)",
     "Space Complexity:": "O(1)",
     "notes": "In optimal First use two Pointers Swap Left and right and left >= right Stop."
+  },
+  {
+    "date": "2026-07-28",
+    "problem": "Fibonacci number",
+    "topics": [
+      "Math",
+      "dp",
+      "recursion"
+    ],
+    "difficulty": "Easy",
+    "pattern": "DP,Math,recursion.",
+    "link": "https://leetcode.com/problems/fibonacci-number/",
+    "Time Complexity:": "O(n)because the loop runs from 2 through n.",
+    "Space Complexity:": "O(1) because it only uses three variables (a, b, next), no matter how large n is.",
+    "notes": "1.Smaller elements go to the left of pivot. 2.Larger elements go to the right of pivot. 3.Repeat the same process for left and right parts."
   }
 ]

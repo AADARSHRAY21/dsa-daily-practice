@@ -75,10 +75,12 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 |-------|--------|
 | arrays | 7 |
 | strings | 3 |
-| Math | 1 |
+| Math | 2 |
 | stacks-queues | 1 |
+| dp | 1 |
+| recursion | 1 |
 
-**Total problems solved:** 9
+**Total problems solved:** 10
 <!-- STATS_END -->
 
 
