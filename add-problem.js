@@ -31,6 +31,7 @@ const TOPICS = [
   "graphs",
   "Sorting",
   "dp",
+  "recursion",
   "greedy",
   "binary-search",
   "heaps",
