@@ -134,5 +134,19 @@
     "Time Complexity:": "O(n)",
     "Space Complexity:": "O(1)",
     "notes": "Treat the array as circular. Compare every element with the next element, including the final element with the first.(optimal)"
+  },
+  {
+    "date": "2026-08-12",
+    "problem": "remove duplicates from sorted array",
+    "topics": [
+      "arrays",
+      "two-pointers-sliding-window"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Two pointers",
+    "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array",
+    "Time Complexity:": "O(n) because each element is checked once.",
+    "Space Complexity:": "O(1) because no extra array is used.",
+    "notes": "Idea: Keep the first value. Start read from index 1. Whenever nums[read] differs from the previous unique value, write it at nums[write]."
   }
 ]

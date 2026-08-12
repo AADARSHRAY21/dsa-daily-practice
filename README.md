@@ -73,13 +73,15 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 
 | Topic | Solved |
 |-------|--------|
-| arrays | 8 |
+| arrays | 9 |
 | strings | 3 |
 | Math | 2 |
 | stacks-queues | 1 |
 | dp | 1 |
+| recursion | 1 |
+| two-pointers-sliding-window | 1 |
 
-**Total problems solved:** 11
+**Total problems solved:** 12
 <!-- STATS_END -->
 
 
