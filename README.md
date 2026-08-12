@@ -78,7 +78,6 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 | Math | 2 |
 | stacks-queues | 1 |
 | dp | 1 |
-| recursion | 1 |
 
 **Total problems solved:** 11
 <!-- STATS_END -->
