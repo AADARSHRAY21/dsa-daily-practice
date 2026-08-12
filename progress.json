@@ -121,5 +121,18 @@
     "Time Complexity:": "O(n)because the loop runs from 2 through n.",
     "Space Complexity:": "O(1) because it only uses three variables (a, b, next), no matter how large n is.",
     "notes": "1.Smaller elements go to the left of pivot. 2.Larger elements go to the right of pivot. 3.Repeat the same process for left and right parts."
+  },
+  {
+    "date": "2026-08-12",
+    "problem": "check-if-array-is-sorted-and-rotated",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Array(circular array/Optimal approach!",
+    "link": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/",
+    "Time Complexity:": "O(n)",
+    "Space Complexity:": "O(1)",
+    "notes": "Treat the array as circular. Compare every element with the next element, including the final element with the first.(optimal)"
   }
 ]
