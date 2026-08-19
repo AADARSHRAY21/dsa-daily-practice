@@ -36,7 +36,8 @@ const TOPICS = [
   "binary-search",
   "heaps",
   "backtracking",
-  "two-pointers-sliding-window",
+  "two-pointers",
+  "Sliding-window",
 ];
 
 const PROGRESS_FILE = path.join(__dirname, "progress.json");

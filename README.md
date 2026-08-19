@@ -40,7 +40,8 @@ dsa-daily-practice/
 ├── binary-search/
 ├── heaps/
 ├── backtracking/
-├── two-pointers-sliding-window/
+├── two-pointers
+├── Sliding-window/
 └── README.md
 ```
 
