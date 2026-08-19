@@ -148,5 +148,20 @@
     "Time Complexity:": "O(n) because each element is checked once.",
     "Space Complexity:": "O(1) because no extra array is used.",
     "notes": "Idea: Keep the first value. Start read from index 1. Whenever nums[read] differs from the previous unique value, write it at nums[write]."
+  },
+  {
+    "date": "2026-08-19",
+    "problem": "Rotate array",
+    "topics": [
+      "arrays",
+      "Math",
+      "two-pointers-sliding-window"
+    ],
+    "difficulty": "Medium",
+    "pattern": "Index mapping and array reversal.",
+    "link": "https://leetcode.com/problems/rotate-array/",
+    "Time Complexity:": "0(n) reverse() swaps elements from both ends toward the middle.",
+    "Space Complexity:": "O(1) The original nums array is not counted as extra space because the question already gives it to us, and we modify it in-place.",
+    "notes": "Even though reverse() is called three times, the number of array operations still grows linearly with n. temp, left, right, n, and k are only a fixed number of variables. They do not increase when the input array gets larger."
   }
 ]
