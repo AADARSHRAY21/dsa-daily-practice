@@ -177,5 +177,18 @@
     "Time Complexity:": "0(n).",
     "Space Complexity:": "0(1).",
     "notes": "i: reads every element,index: marks where the next non-zero element should go"
+  },
+  {
+    "date": "2026-08-23",
+    "problem": "Concatenation of Array.",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Concatenation.",
+    "link": "https://leetcode.com/problems/concatenation-of-array/",
+    "Time Complexity:": "O(n) — one loop through the input.",
+    "Space Complexity:": "O(n) — the required output array.",
+    "notes": "Create an array of size 2n, then place each nums[i] at,2.“New array double size; copy every item at i and i+n.”"
   }
 ]
