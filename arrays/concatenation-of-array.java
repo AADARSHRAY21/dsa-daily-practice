@@ -2,7 +2,7 @@
  * Problem: Concatenation of Array. (LeetCode #1929)
  * Link: https://leetcode.com/problems/concatenation-of-array/
  * Difficulty: Easy
- * Pattern: Concatenation.
+ * Pattern: Array duplication.
  * Topics: arrays
  *
  * Approach (in my own words):
