@@ -163,5 +163,19 @@
     "Time Complexity:": "0(n) reverse() swaps elements from both ends toward the middle.",
     "Space Complexity:": "O(1) The original nums array is not counted as extra space because the question already gives it to us, and we modify it in-place.",
     "notes": "Even though reverse() is called three times, the number of array operations still grows linearly with n. temp, left, right, n, and k are only a fixed number of variables. They do not increase when the input array gets larger."
+  },
+  {
+    "date": "2026-08-23",
+    "problem": "Move Zeroes",
+    "topics": [
+      "arrays",
+      "two-pointers"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Two pointers, array",
+    "link": "https://leetcode.com/problems/move-zeroes/",
+    "Time Complexity:": "0(n).",
+    "Space Complexity:": "0(1).",
+    "notes": "i: reads every element,index: marks where the next non-zero element should go"
   }
 ]
