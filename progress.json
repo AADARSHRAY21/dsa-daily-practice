@@ -190,5 +190,18 @@
     "Time Complexity:": "O(n) — one loop through the input.",
     "Space Complexity:": "O(n) — the required output array.",
     "notes": "Create an array of size 2n, then place each nums[i] at,2.“New array double size; copy every item at i and i+n.”"
+  },
+  {
+    "date": "2026-08-23",
+    "problem": "Running sum of 1D array.",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Prefix sum/running sum",
+    "link": "https://leetcode.com/problems/running-sum-of-1d-array/",
+    "Time Complexity:": "O(n) — visit each element once.",
+    "Space Complexity:": "O(1) — if updating nums directly.",
+    "notes": "“Previous total + current value = current total, nums[i] = nums[i-1] + nums[i].”"
   }
 ]
