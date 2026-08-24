@@ -203,5 +203,19 @@
     "Time Complexity:": "O(n) — visit each element once.",
     "Space Complexity:": "O(1) — if updating nums directly.",
     "notes": "“Previous total + current value = current total, nums[i] = nums[i-1] + nums[i].”"
+  },
+  {
+    "date": "2026-08-24",
+    "problem": "Missing Number",
+    "topics": [
+      "arrays",
+      "Math"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Expected value − Actual value",
+    "link": "https://leetcode.com/problems/missing-number/",
+    "Time Complexity:": "O(n) — the loop visits every array element once.",
+    "Space Complexity:": "O(1) — only fixed variables (n, expectedSum, actualSum) are used.",
+    "notes": "Full range sum − array sum = missing number."
   }
 ]
