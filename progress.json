@@ -217,5 +217,18 @@
     "Time Complexity:": "O(n) — the loop visits every array element once.",
     "Space Complexity:": "O(1) — only fixed variables (n, expectedSum, actualSum) are used.",
     "notes": "Full range sum − array sum = missing number."
+  },
+  {
+    "date": "2026-08-24",
+    "problem": "Richest customer wealth.",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "2D Array traversal + Row sum.",
+    "link": "https://leetcode.com/problems/richest-customer-wealth",
+    "Time Complexity:": "0(m x N). m is no. of rows and n is no. of bank accounts.",
+    "Space Complexity:": "0(1). only sum and maxwealth varibales are used.",
+    "notes": "“For every row: sum it → update maximum.”,Do not write only accounts[0] and accounts[1]; there can be many customer rows. Use:for (int[] customer : accounts)"
   }
 ]
