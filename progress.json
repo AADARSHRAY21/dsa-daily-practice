@@ -230,5 +230,18 @@
     "Time Complexity:": "0(m x N). m is no. of rows and n is no. of bank accounts.",
     "Space Complexity:": "0(1). only sum and maxwealth varibales are used.",
     "notes": "“For every row: sum it → update maximum.”,Do not write only accounts[0] and accounts[1]; there can be many customer rows. Use:for (int[] customer : accounts)"
+  },
+  {
+    "date": "2026-08-24",
+    "problem": "Shuffle the Array.",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Array Interleaving / Two Halves",
+    "link": "https://leetcode.com/problems/shuffle-the-array/",
+    "Time Complexity:": "O(n) — every 2n element needs to appear in the result.",
+    "Space Complexity:": "O(n) — the returned ans array is required.",
+    "notes": "“First half + second half, pick one-one alternately.”"
   }
 ]
