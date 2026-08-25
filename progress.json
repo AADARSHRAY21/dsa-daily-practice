@@ -256,5 +256,18 @@
     "Time Complexity:": "O(n).",
     "Space Complexity:": "0(n). including return result.",
     "notes": "Find the current maximum candy count. For each kid, check"
+  },
+  {
+    "date": "2026-08-25",
+    "problem": "Max consecutive ones.",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Running count/reset on break",
+    "link": "https://leetcode.com/problems/max-consecutive-ones/",
+    "Time Complexity:": "O(n).",
+    "Space Complexity:": "O(1).",
+    "notes": "1.1 → increase current streak. 2.0 → reset streak to 0,Keep the largest streak seen."
   }
 ]
