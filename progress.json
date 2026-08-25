@@ -243,5 +243,18 @@
     "Time Complexity:": "O(n) — every 2n element needs to appear in the result.",
     "Space Complexity:": "O(n) — the returned ans array is required.",
     "notes": "“First half + second half, pick one-one alternately.”"
+  },
+  {
+    "date": "2026-08-25",
+    "problem": "Kids with the Greatest number of candies.",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "\"Find max, then compare\"",
+    "link": "https://leetcode.com/problems/kids-with-the-greatest-number-of-candies",
+    "Time Complexity:": "O(n).",
+    "Space Complexity:": "0(n). including return result.",
+    "notes": "Find the current maximum candy count. For each kid, check"
   }
 ]
