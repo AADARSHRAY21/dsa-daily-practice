@@ -282,5 +282,19 @@
     "Time Complexity:": "0(n).",
     "Space Complexity:": "0(1).",
     "notes": "every number appears exactly twice except one,you need O(n) time,you need O(1) extra space."
+  },
+  {
+    "date": "2026-08-25",
+    "problem": "Number of good pairs",
+    "topics": [
+      "arrays",
+      "Math"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Frequency map / count previous occurrences",
+    "link": "https://leetcode.com/problems/number-of-good-pairs/",
+    "Time Complexity:": "0(n).",
+    "Space Complexity:": "O(1) because the array size is always 101.",
+    "notes": "When you see a number again, it forms one pair with every same number seen before."
   }
 ]
