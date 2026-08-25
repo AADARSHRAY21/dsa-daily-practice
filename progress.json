@@ -269,5 +269,18 @@
     "Time Complexity:": "O(n).",
     "Space Complexity:": "O(1).",
     "notes": "1.1 → increase current streak. 2.0 → reset streak to 0,Keep the largest streak seen."
+  },
+  {
+    "date": "2026-08-25",
+    "problem": "Single number",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "bit manipulation, xor cancellation.",
+    "link": "https://leetcode.com/problems/single-number/",
+    "Time Complexity:": "0(n).",
+    "Space Complexity:": "0(1).",
+    "notes": "every number appears exactly twice except one,you need O(n) time,you need O(1) extra space."
   }
 ]
