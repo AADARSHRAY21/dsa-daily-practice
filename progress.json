@@ -309,5 +309,20 @@
     "Time Complexity:": "",
     "Space Complexity:": "",
     "notes": ""
+  },
+  {
+    "date": "2026-09-01",
+    "problem": "Sort colors",
+    "topics": [
+      "arrays",
+      "Sorting",
+      "two-pointers"
+    ],
+    "difficulty": "medium",
+    "pattern": "Dutch National Flag",
+    "link": "https://leetcode.com/problems/sort-colors/",
+    "Time Complexity:": "|O(n).",
+    "Space Complexity:": "0(1).",
+    "notes": "Sort array containing only 0, 1, 2.3-way partition"
   }
 ]

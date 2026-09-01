@@ -74,15 +74,16 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 
 | Topic | Solved |
 |-------|--------|
-| arrays | 21 |
+| arrays | 22 |
 | strings | 3 |
 | Math | 5 |
 | stacks-queues | 1 |
+| Sorting | 1 |
 | dp | 1 |
 | recursion | 1 |
-| two-pointers | 1 |
+| two-pointers | 2 |
 
-**Total problems solved:** 24
+**Total problems solved:** 25
 <!-- STATS_END -->
 
 
