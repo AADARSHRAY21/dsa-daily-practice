@@ -324,5 +324,19 @@
     "Time Complexity:": "|O(n).",
     "Space Complexity:": "0(1).",
     "notes": "Sort array containing only 0, 1, 2.3-way partition"
+  },
+  {
+    "date": "2026-09-03",
+    "problem": "best-time-to-buy-and-sell-stock",
+    "topics": [
+      "arrays",
+      "dp"
+    ],
+    "difficulty": "Easy",
+    "pattern": "\"Track the minimum so far and maximize the difference.\"",
+    "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "Time Complexity:": "O(n),One-pass min + max profit",
+    "Space Complexity:": "0(1).",
+    "notes": "Buy at the cheapest price seen so far, sell at today's price, and keep the best profit."
   }
 ]
