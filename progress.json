@@ -338,5 +338,19 @@
     "Time Complexity:": "O(n),One-pass min + max profit",
     "Space Complexity:": "0(1).",
     "notes": "Buy at the cheapest price seen so far, sell at today's price, and keep the best profit."
+  },
+  {
+    "date": "2026-09-04",
+    "problem": "rearrange array elements by sign",
+    "topics": [
+      "arrays",
+      "two-pointers"
+    ],
+    "difficulty": "Medium",
+    "pattern": "Array → Rearrangement → Fixed Position Pattern",
+    "link": "https://leetcode.com/problems/rearrange-array-elements-by-sign",
+    "Time Complexity:": "O(n).",
+    "Space Complexity:": "O(1) auxiliary, idea- Two indices.",
+    "notes": "Two pointers + fixed-position placement + stable ordering,You don't need to rearrange the original array; just build the answer in the correct positions."
   }
 ]
