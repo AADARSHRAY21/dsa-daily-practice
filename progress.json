@@ -366,5 +366,18 @@
     "Time Complexity:": "O(n).",
     "Space Complexity:": "O(1).",
     "notes": ""
+  },
+  {
+    "date": "2026-09-09",
+    "problem": "Smallest Stable index1",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "",
+    "link": "https://leetcode.com/problems/smallest-stable-index-i",
+    "Time Complexity:": "O(n)",
+    "Space Complexity:": "O(1).",
+    "notes": ""
   }
 ]

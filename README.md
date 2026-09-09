@@ -74,7 +74,7 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 
 | Topic | Solved |
 |-------|--------|
-| arrays | 25 |
+| arrays | 26 |
 | strings | 3 |
 | Math | 6 |
 | stacks-queues | 1 |
@@ -83,7 +83,7 @@ Use the `TEMPLATE.md` file in this repo as a guide for how each problem's notes 
 | recursion | 1 |
 | two-pointers | 3 |
 
-**Total problems solved:** 28
+**Total problems solved:** 29
 <!-- STATS_END -->
 
 
