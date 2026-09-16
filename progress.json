@@ -394,5 +394,20 @@
     "Time Complexity:": "O(N)",
     "Space Complexity:": "O(1)",
     "notes": "Previous 2 numbers?,c = a + b; a=b, b=c."
+  },
+  {
+    "date": "2026-09-16",
+    "problem": "Maximum Product",
+    "topics": [
+      "greedy",
+      "Math",
+      "dp"
+    ],
+    "difficulty": "Medium",
+    "pattern": "Greedy + Mathematical Optimization",
+    "link": "",
+    "Time Complexity:": "O(n) with greedy + mathemmatical , O(log n) with proper mathematical formula.",
+    "Space Complexity:": "O(1).",
+    "notes": "\"Split N so that product is maximum.\",Maximum Product = Break into 3s,Mathematical Formula."
   }
 ]
