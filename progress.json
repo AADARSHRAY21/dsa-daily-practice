@@ -379,5 +379,20 @@
     "Time Complexity:": "O(n)",
     "Space Complexity:": "O(1).",
     "notes": ""
+  },
+  {
+    "date": "2026-09-16",
+    "problem": "Modified Fibonacci(TCS NQT Question)",
+    "topics": [
+      "Math",
+      "dp",
+      "recursion"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Iterative Dynamic Programming",
+    "link": "",
+    "Time Complexity:": "O(N)",
+    "Space Complexity:": "O(1)",
+    "notes": "Previous 2 numbers?,c = a + b; a=b, b=c."
   }
 ]
