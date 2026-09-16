@@ -16,5 +16,39 @@
  * Revisit on: (7 days from 2026-09-16)
  */
 
-// TODO: paste your solved code below
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        long a = 3;
+        long b = 4;
+
+        if (n == 1) {
+            System.out.println(a);
+        }
+        else if (n == 2) {
+            System.out.println(b);
+        }
+        else {
+
+            for (int i = 3; i <= n; i++) {
+
+                long c = a + b;
+
+                a = b;
+                b = c;
+            }
+
+            System.out.println(b);
+        }
+
+        sc.close();
+    }
+}
 
