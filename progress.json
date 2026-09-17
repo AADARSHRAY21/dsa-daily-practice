@@ -409,5 +409,18 @@
     "Time Complexity:": "O(n) with greedy + mathemmatical , O(log n) with proper mathematical formula.",
     "Space Complexity:": "O(1).",
     "notes": "\"Split N so that product is maximum.\",Maximum Product = Break into 3s,Mathematical Formula."
+  },
+  {
+    "date": "2026-09-17",
+    "problem": "Reverse an array",
+    "topics": [
+      "arrays"
+    ],
+    "difficulty": "Easy",
+    "pattern": "Swap, left < right",
+    "link": "https://www.geeksforgeeks.org/problems/reverse-an-array/1",
+    "Time Complexity:": "O(n).",
+    "Space Complexity:": "O(1).",
+    "notes": "left < right, temp = left, left = right, right = temp."
   }
 ]
